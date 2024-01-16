@@ -3,3 +3,10 @@ body {
     text-align: center;
 }
 
+.submit {
+    display: inline;
+}
+
+.task-list {
+    display: inline;
+}
