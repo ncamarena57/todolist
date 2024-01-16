@@ -1,1 +1,3 @@
-console.log("hello world");
+function submit() {
+    alert("Hello world");
+}
