@@ -10,3 +10,7 @@ body {
 .task-list {
     display: inline;
 }
+
+li {
+    list-style-type: none;
+}
