@@ -3,14 +3,10 @@ body {
     text-align: center;
 }
 
-.submit {
-    display: inline;
-}
-
-.task-list {
-    display: inline;
-}
-
 li {
-    list-style-type: none;
+}
+
+ul.list {
+    background-color: lightcoral;
+    display: inline-block;
 }
