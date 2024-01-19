@@ -16,10 +16,15 @@ function resetInput() {
     document.getElementById("new-task").value = "";
 }
 
-let listItem = document.getElementsByTagName("li");
+//let listItem = document.querySelector("li");
 
-if (listItem) {
-    listItem.addEventListener("click", function() {
-        listItem.display = "hidden";
-    });
-}
+document.addEventListener("click", function(e){
+    const target = e.target.closest("li"); // Or any other selector.
+    if(target){
+        if (!target.style.textDecoration || target.style.textDecoration === "none") {
+            target.style.textDecoration = "line-through";
+        } else {
+            target.style.textDecoration = "none";
+        }
+    }
+});
