@@ -2,8 +2,8 @@ const submitBtn = document.querySelector(".submit");
 
 submitBtn.addEventListener("click", function() {
     //console.log("You have submitted a new task.");
+    const input = document.getElementById("new-task").value;
     if (input) {
-        const input = document.getElementById("new-task").value;
         const li = document.createElement("li");
         li.innerText = input;
         const ul = document.querySelector(".list");
@@ -16,7 +16,7 @@ function resetInput() {
     document.getElementById("new-task").value = "";
 }
 
-let listItem = document.querySelector("li");
+let listItem = document.getElementsByTagName("li");
 
 if (listItem) {
     listItem.addEventListener("click", function() {
