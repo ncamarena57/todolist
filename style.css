@@ -3,10 +3,6 @@ body {
     text-align: center;
 }
 
-li {
-}
-
 ul.list {
-    background-color: lightcoral;
     display: inline-block;
 }
