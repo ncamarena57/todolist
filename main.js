@@ -28,3 +28,8 @@ document.addEventListener("click", function(e){
         }
     }
 });
+
+function clearList() {
+    const ul = document.querySelector(".list");
+    console.log("hello");
+}
