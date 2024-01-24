@@ -33,3 +33,7 @@ function clearList() {
     const ul = document.querySelector(".list");
     ul.innerHTML = "";
 }
+
+function saveList() {
+    console.log("hello");
+}
