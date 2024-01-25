@@ -1,9 +1,12 @@
 const submitBtn = document.querySelector(".submit");
+let list = [];
 
 submitBtn.addEventListener("click", function() {
     //console.log("You have submitted a new task.");
     const input = document.getElementById("new-task").value;
     if (input) {
+        list.push(input);
+        console.log(list);
         const li = document.createElement("li");
         li.innerText = input;
         const ul = document.querySelector(".list");
@@ -32,8 +35,14 @@ document.addEventListener("click", function(e){
 function clearList() {
     const ul = document.querySelector(".list");
     ul.innerHTML = "";
+    list = [];
 }
 
 function saveList() {
-    console.log("hello");
+    if (list.length !== 0) {
+        let savedList = list;
+        console.log("Your list includes these items: " + savedList);
+    } else {
+        alert("List is empty.");
+    }
 }
