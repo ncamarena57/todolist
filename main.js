@@ -41,7 +41,8 @@ function clearList() {
 function saveList() {
     if (list.length !== 0) {
         let savedList = list;
-        console.log("Your list includes these items: " + savedList);
+        let name = prompt("What would you like to name this list?");
+        console.log("Your list " + name + " includes these items: " + savedList);
     } else {
         alert("List is empty.");
     }
